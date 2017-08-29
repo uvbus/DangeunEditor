@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{72754e15-f9c7-498b-8d93-c26f10527835}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{dfc83ad9-adef-4bc7-b921-a14e9d3785b9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{3f352fd7-65b2-4ba4-aed2-9386b06743a5}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AeUtil.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApiEdit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApiEditHexa.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApiEditText.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Clip.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Dangeun.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWnd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Find.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Internet.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Macro.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Mru.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Parse.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Print.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortCut.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBar.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AeUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApiEdit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApiEditHexa.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApiEditText.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Clip.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Dangeun.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Find.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Internet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Mru.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Parse.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Print.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Project.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortCut.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBar.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApiEditCopy.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ApiEditCopy.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ApiEditMargin.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ApiEditMargin.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ApiEditMove.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ApiEditMove.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\SizeHorz.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\SizeVert.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\DgCmd.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\curline1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\curline2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\curline3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\curline4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\curline5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\curline6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Dangeun.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\DGDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Files.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FtpFiles.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="icon2.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sel1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sel2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sel3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Tabs.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ToolBar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ToolBarBig.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\국화.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\아가.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\콩.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dangeun.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

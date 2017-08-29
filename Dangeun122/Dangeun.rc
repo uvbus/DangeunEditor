@@ -1,0 +1,1720 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SIZEVERT            CURSOR                  "res/SizeVert.cur"
+IDC_SIZEHORZ            CURSOR                  "res/SizeHorz.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            IDM_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           IDM_FILE_OPEN
+        MENUITEM "저장(&S)\tCtrl+S",              IDM_FILE_SAVE
+        MENUITEM "새 이름으로(&A)...",               IDM_FILE_SAVEAS
+        MENUITEM "닫기(&C)\tCtrl+F4",             IDM_FILE_CLOSE
+        MENUITEM "모두 저장(&L)\tCtrl+Shift+S",     IDM_FILE_SAVEALL
+        MENUITEM "모두 닫기(&Q)\tCtrl+Alt+C",       IDM_FILE_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "FTP 열기(&D)...\tCtrl+Alt+O",   IDM_FILE_FTPOPEN
+        MENUITEM "HTTP 열기(&H)...",              IDM_FILE_HTTPOPEN
+        POPUP "포맷 변환(&F)"
+        BEGIN
+            MENUITEM "ANSI(&A)",                    IDM_FILE_ANSI
+            MENUITEM "유니코드(&U)",                    IDM_FILE_UNI
+            MENUITEM "유니코드 빅(&B)",                  IDM_FILE_UNIBIG
+            MENUITEM "유니코드(NB)",                    IDM_FILE_UNINOBOM
+            MENUITEM "유니코드 빅(NB)",                  IDM_FILE_UNIBIGNOBOM
+            MENUITEM "UTF-&8",                      IDM_FILE_UTF8
+            MENUITEM "UTF-8(&NB)",                  IDM_FILE_UTF8NOBOM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "읽기 전용(&R)",                   IDM_FILE_READONLY
+        MENUITEM "최후 저장 상태로 되돌리기(&V)",          IDM_FILE_REVERT
+        MENUITEM "인쇄(&P)\tCtrl+P",              IDM_FILE_PRINT
+        MENUITEM "문서 정보(&I)",                   IDM_FILE_INFO
+        MENUITEM "프로젝트 관리(&T)...",              IDM_FILE_PROJECT
+        POPUP "최근파일(&M)"
+        BEGIN
+            MENUITEM "비어있음",                        IDM_FILE_EMPTY, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)\tAlt+F4",              IDM_FILE_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",              IDM_EDIT_UNDO
+        MENUITEM "재실행(&R)\tCtrl+Y",             IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "복사(&C)\tCtrl+C",              IDM_EDIT_COPY
+        MENUITEM "잘라내기(&T)\tCtrl+X",            IDM_EDIT_CUT
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            IDM_EDIT_PASTE
+        MENUITEM "전체선택(A)\tCtrl+A",             IDM_EDIT_SELALL
+        MENUITEM "복사해서 추가(&P)\tCtrl+Shift+C",   IDM_EDIT_COPYAPPEND
+        MENUITEM "잘라서 추가(&U)\tCtrl+Shift+X",    IDM_EDIT_CUTAPPEND
+        MENUITEM SEPARATOR
+        POPUP "변환(&O)"
+        BEGIN
+            MENUITEM "대문자로(&U)\tCtrl+U",            IDM_EDIT_UPPER
+            MENUITEM "소문자로(&L)\tCtrl+L",            IDM_EDIT_LOWER
+            MENUITEM "대소문자 반대로(&R)",                IDM_EDIT_REVERSE
+            MENUITEM "첫글자만 대문자로(&F)",               IDM_EDIT_UPPERFIRST
+            MENUITEM "문장 처음만 대문자로(&P)",             IDM_EDIT_UPPERSENT
+            MENUITEM SEPARATOR
+            MENUITEM "공백을 탭으로(&T)",                 IDM_EDIT_TOTAB
+            MENUITEM "탭을 공백으로(&S)",                 IDM_EDIT_TOSPACE
+            MENUITEM "불필요한 공백 제거(&X)",              IDM_EDIT_REMOVESPACE
+            MENUITEM SEPARATOR
+            MENUITEM "들여쓰기(&I)",                    IDM_EDIT_INDENT
+            MENUITEM "내어쓰기(&D)",                    IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            MENUITEM "주석으로(&C)\tCtrl+M",            IDM_EDIT_COMMENT
+            MENUITEM "주석제거(&O)\tCtrl+Shift+M",      IDM_EDIT_UNCOMMENT
+        END
+        POPUP "삽입(&I)"
+        BEGIN
+            MENUITEM "날짜(&D)",                      IDM_EDIT_DATE
+            MENUITEM "시간(&T)",                      IDM_EDIT_TIME
+            MENUITEM "윗줄 문자 반복(&R)\tCtrl+I",        IDM_EDIT_COPYUP
+            MENUITEM "아래줄 문자 반복(&T)\tCtrl+Shift+I", IDM_EDIT_COPYDOWN
+            MENUITEM "파일(&F)...",                   IDM_EDIT_INSERTFILE
+            MENUITEM "특수 문자(&S)...\tCtrl+K",        IDM_EDIT_INSERTSPECIAL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "가상 공백",                       IDM_EDIT_VIRT
+        MENUITEM "열 모드\tAlt+C",                 IDM_EDIT_COLUMN
+        MENUITEM "명령 모드\tAlt+X",                IDM_EDIT_COMMODE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "자동 개행(&W)\tCtrl+W",           IDM_VIEW_WORDWRAP
+        MENUITEM "제어 코드 보기(&C)\tCtrl+E",        IDM_VIEW_CODE
+        POPUP "활성창의 글꼴(&O)"
+        BEGIN
+            MENUITEM "&1 시스템\tAlt+1",               IDM_FONT_1
+            MENUITEM "&2 굴림 10\tAlt+2",             IDM_FONT_2
+            MENUITEM "&3 굴림 12\tAlt+3",             IDM_FONT_3
+            MENUITEM "&4 굴림체 10\tAlt+4",            IDM_FONT_4
+            MENUITEM "&5 굴림체 12\tAlt+5",            IDM_FONT_5
+            MENUITEM "&6 궁서 12\tAlt+6",             IDM_FONT_6
+            MENUITEM "&7 궁서 15\tAlt+7",             IDM_FONT_7
+            MENUITEM "&8 궁서 20\tAlt+8",             IDM_FONT_8
+            MENUITEM "&9 바탕 12\tAlt+9",             IDM_FONT_9
+            MENUITEM "&0 바탕 15\tAlt+0",             IDM_FONT_10
+            MENUITEM "글꼴 선택(&F)...",                IDM_FONT_11
+        END
+        POPUP "활성창의 줄간(&L)"
+        BEGIN
+            MENUITEM "&100\tCtrl+Shift+,(<)",       IDM_LINE_1
+            MENUITEM "1&20\tCtrl+Shift+.(>)",       IDM_LINE_2
+            MENUITEM "1&50\tCtrl+Shift+/(?)",       IDM_LINE_3
+            MENUITEM "2&00\tCtrl+Shift+;(;)",       IDM_LINE_4
+            MENUITEM "&300\tCtrl+Shift+'("")",      IDM_LINE_5
+        END
+        POPUP "문법 강조(&Y)"
+        BEGIN
+            MENUITEM "없음(&N)\tAlt+Shift+0",         IDM_SYN_NONE
+            MENUITEM "&C/C++\tAlt+Shift+1",         IDM_SYN_CPP
+            MENUITEM "&HTML\tAlt+Shift+2",          IDM_SYN_HTML
+            MENUITEM "&SQL\tAlt+Shift+3",           IDM_SYN_SQL
+            MENUITEM "&Java\tAlt+Shift+4",           IDM_SYN_JAVA
+            MENUITEM "C#(&M)\tAlt+Shift+5",           IDM_SYN_CS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "16진 보기\tCtrl+H",              IDM_VIEW_HEXA
+        MENUITEM SEPARATOR
+        MENUITEM "툴바(&T)",                      IDM_VIEW_TOOLBAR
+        MENUITEM "상태란(&S)",                     IDM_VIEW_STATUS
+        MENUITEM "파일창(&F)",                     IDM_VIEW_FILE
+        MENUITEM "파일탭(&I)",                     IDM_VIEW_FILETAB
+        MENUITEM "검색 결과(&O)",                   IDM_VIEW_OUTPUT
+        MENUITEM "상용구 창(&P)",                   IDM_VIEW_CLIP
+    END
+    POPUP "검색(&S)"
+    BEGIN
+        MENUITEM "찾기(&F)...\tCtrl+F",           IDM_SEARCH_FIND
+        MENUITEM "다음 찾기(&N)\tF3",               IDM_SEARCH_NEXT
+        MENUITEM "이전 찾기(&P)\tShift+F3",         IDM_SEARCH_PREV
+        MENUITEM "현재 단어 찾기(&D)\tCtrl+F3",       IDM_SEARCH_WORD
+        MENUITEM "현재 단어 위로(&U)\tCtrl+Shift+F3", IDM_SEARCH_WORDUP
+        MENUITEM "바꾸기(&R)...\tCtrl+R",          IDM_SEARCH_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "책갈피 설정/해제(&B)\tCtrl+F2",      IDM_SEARCH_TOGGLEMARK
+        MENUITEM "다음 책갈피로(&>)\tF2",             IDM_SEARCH_NEXTMARK
+        MENUITEM "이전 책갈피로(&<)\tShift+F2",       IDM_SEARCH_PREVMARK
+        MENUITEM "책갈피 모두 해제(&C)",               IDM_SEARCH_CLEARMARK
+        MENUITEM "줄 찾기(&L)...\tCtrl+G",         IDM_SEARCH_GOTOLINE
+        MENUITEM "괄호 짝 찾기(&])\tCtrl+B",         IDM_SEARCH_PAREN
+        MENUITEM "마지막 편집 위치\tCtrl+Q",           IDM_SEARCH_LASTEDIT
+        MENUITEM SEPARATOR
+        MENUITEM "파일에서 찾기(&I)...\tCtrl+Shift+F", IDM_SEARCH_FILES
+        MENUITEM "파일에서 바꾸기(&J)...",             IDM_SEARCH_RFILES
+        MENUITEM "바로 찾기(&S)\tF4",               IDM_SEARCH_INST
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        MENUITEM "기본 설정(&C)...\tCtrl+T",        IDM_TOOL_CONFIG
+        MENUITEM "설치 정보 삭제(&U)",                IDM_TOOL_UNINSTALL
+        MENUITEM SEPARATOR
+        MENUITEM "매크로(&M)...\tCtrl+Alt+M",      IDM_TOOL_MACRO
+        MENUITEM "단축키 정의(&S)...",               IDM_TOOL_SHORTCUT
+        MENUITEM "상용구 관리(&C)...",               IDM_TOOL_CLIP
+        MENUITEM "읽기 모드(&R)...\tCtrl+Alt+R",    IDM_TOOL_READMODE
+        MENUITEM "문단 재구성(&P)...\tCtrl+Alt+P",   IDM_TOOL_PARA
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "계단식 정렬(&C)",                  IDM_WIN_CASCADE
+        MENUITEM "수평 정렬(&H)",                   IDM_WIN_HORZ
+        MENUITEM "수직 정렬(&V)",                   IDM_WIN_VERT
+        MENUITEM "아이콘 정렬(&A)",                  IDM_WIN_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "다음 뷰(&N)\tF6",                IDM_WIN_NEXTVIEW
+        MENUITEM "이전 뷰(&P)\tShift+F6",          IDM_WIN_PREVVIEW
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "프로그램 소개(&A)",                 IDM_HELP_ABOUT
+        MENUITEM "도움말(&H)\tF1",                 IDM_HELP_INDEX
+        MENUITEM "홈페이지 방문(&G)",                 IDM_HELP_HOME
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            IDM_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "FTP 열기(&D)...\tCtrl+Alt+O",   IDM_FILE_FTPOPEN
+        MENUITEM "HTTP 열기...(&H)",              IDM_FILE_HTTPOPEN
+        MENUITEM SEPARATOR
+        MENUITEM "프로젝트 관리(&T)...",              IDM_FILE_PROJECT
+        POPUP "최근파일(&M)"
+        BEGIN
+            MENUITEM "비어있음",                        IDM_FILE_EMPTY, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)\tAlt+F4",              IDM_FILE_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "툴바(&T)",                      IDM_VIEW_TOOLBAR
+        MENUITEM "상태란(&S)",                     IDM_VIEW_STATUS
+        MENUITEM "파일창(&F)",                     IDM_VIEW_FILE
+        MENUITEM "파일탭(&I)",                     IDM_VIEW_FILETAB
+        MENUITEM "검색 결과(&O)",                   IDM_VIEW_OUTPUT
+        MENUITEM "상용구 창(&P)",                   IDM_VIEW_CLIP
+    END
+    POPUP "검색(&S)"
+    BEGIN
+        MENUITEM "파일에서 찾기(&I)...\tCtrl+Shift+F", IDM_SEARCH_FILES
+        MENUITEM "파일에서 바꾸기(&J)...",             IDM_SEARCH_RFILES
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        MENUITEM "기본 설정(&C)...\tCtrl+T",        IDM_TOOL_CONFIG
+        MENUITEM "설치 정보 삭제(&U)",                IDM_TOOL_UNINSTALL
+        MENUITEM SEPARATOR
+        MENUITEM "매크로(&M)...\tCtrl+Alt+M",      IDM_TOOL_MACRO
+        MENUITEM "단축키 정의(&S)...",               IDM_TOOL_SHORTCUT
+        MENUITEM "상용구 관리(&C)...",               IDM_TOOL_CLIP
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "프로그램 소개(&A)",                 IDM_HELP_ABOUT
+        MENUITEM "도움말(&H)\tF1",                 IDM_HELP_INDEX
+        MENUITEM "홈페이지 방문(&G)",                 IDM_HELP_HOME
+    END
+END
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "검색 결과 팝업"
+    BEGIN
+        MENUITEM "검색된 파일로 가기(&G)\t더블클릭",        IDM_OUTPUT_GO
+        MENUITEM "텍스트로 복사하기(&C)",               IDM_OUTPUT_COPY
+        MENUITEM "활성창으로 전송(&S)",                IDM_OUTPUT_SEND
+        MENUITEM "새창으로 전송(&N)",                 IDM_OUTPUT_SENDNEW
+        MENUITEM SEPARATOR
+        MENUITEM "검색 결과 닫기(&Q)",                IDM_OUTPUT_CLOSE
+    END
+    POPUP "파일창 팝업"
+    BEGIN
+        MENUITEM "파일창 닫기(&C)",                  IDM_FILEWND_CLOSE
+        MENUITEM "새로 고침(&R)",                   IDM_FILEWND_REFRESH
+        MENUITEM "숨김 파일 표시(&H)",                IDM_FILEWND_HIDDEN
+        MENUITEM "살펴보기 모드(&B)",                 IDM_FILEWND_BROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "삭제(&D)",                      IDM_FILEWND_DELETE
+        MENUITEM "이름 변경(&N)",                   IDM_FILEWND_RENAME
+    END
+    POPUP "프로젝트 팝업"
+    BEGIN
+        MENUITEM "파일창 닫기(&C)",                  IDM_FILEWND_CLOSE
+        MENUITEM "새로 고침(&R)",                   IDM_FILEWND_REFRESH
+        MENUITEM "숨김 파일 표시(&H)",                IDM_FILEWND_HIDDEN
+        MENUITEM "살펴보기 모드(&B)",                 IDM_FILEWND_BROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "프로젝트 편집(&E)...",              IDM_PROJECT_EDIT
+        MENUITEM "프로젝트 닫기(&Q)",                 IDM_PROJECT_CLOSE
+    END
+    POPUP "인쇄 예약어"
+    BEGIN
+        MENUITEM "파일의 이름",                      IDM_PRINT_FILE
+        MENUITEM "파일의 절대 경로",                   IDM_PRINT_PATH
+        MENUITEM "인쇄 날짜",                       IDM_PRINT_DATE
+        MENUITEM "인쇄 시간",                       IDM_PRINT_TIME
+        MENUITEM "현재 쪽",                        IDM_PRINT_PAGE
+        MENUITEM "전체 쪽",                        IDM_PRINT_TOTALPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "이후부터 가운데 출력",                 IDM_PRINT_CENTER
+        MENUITEM "이후부터 오른쪽에 출력",                IDM_PRINT_RIGHT
+    END
+    POPUP "상용구 팝업"
+    BEGIN
+        MENUITEM "상용구 창 닫기(&C)",                IDM_CLIP_CLOSEWND
+        MENUITEM SEPARATOR
+        MENUITEM "상용구 삽입(&I)\t더블클릭",            IDM_CLIP_INSERT
+        MENUITEM "상용구 복사(&O)",                  IDM_CLIP_COPY
+        MENUITEM "새 파일로(&F)",                   IDM_CLIP_NEWFILE
+        MENUITEM "상용구 관리(&E)...",               IDM_CLIP_EDIT
+        MENUITEM "상용구 닫기(&Q)",                  IDM_CLIP_CLOSE
+    END
+    POPUP "코드 삽입"
+    BEGIN
+        MENUITEM "개행 문자",                       IDM_CODE_ENTER
+        MENUITEM "탭 문자",                        IDM_CODE_TAB
+        MENUITEM "16진수(두자리)",                   IDM_CODE_HEXA
+        MENUITEM "10진수(세자리)",                   IDM_CODE_DECIMAL
+        MENUITEM "역슬레쉬",                        IDM_CODE_BACKSLASH
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DANGEUN             ICON                    "res/Dangeun.ico"
+IDI_CHILD               ICON                    "res/DGDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENERAL DIALOG  0, 0, 335, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "일반"
+FONT 9, "굴림"
+BEGIN
+    GROUPBOX        "시작할 때의 동작",IDC_STATIC,12,12,108,72
+    CONTROL         "빈 상태로 시작하기",IDC_START1,"Button",BS_AUTORADIOBUTTON,18,30,75,10
+    CONTROL         "새 문서 열어주기",IDC_START2,"Button",BS_AUTORADIOBUTTON,18,42,69,10
+    CONTROL         "마지막 편집하던 문서 열기",IDC_START3,"Button",BS_AUTORADIOBUTTON,18,54,98,10
+    CONTROL         "편집하던 모든 문서 열기",IDC_START4,"Button",BS_AUTORADIOBUTTON,18,66,91,10
+    CONTROL         "탐색기의 팝업 메뉴에 당근 편집기 등록",IDC_EXPLORERPOPUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,95,137,10
+    CONTROL         "복수개의 인스턴스 허용",IDC_ALLOWMULTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,110,89,10
+    CONTROL         "다른 프로그램에 의한 변경 감시",IDC_WATCHCHANGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,125,114,10
+    CONTROL         "변경된 파일 발견시 질문없이 다시 읽기",IDC_RELOADNOASK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,140,137,10
+    CONTROL         "시작할 때 활성 프로젝트 다시 열기",IDC_RELOADPROJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,155,123,10
+    CONTROL         "시작할 때 상용구 묶음 다시 열기",IDC_RELOADCLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,170,117,10
+    CONTROL         "처음 열리는 문서창 최대화하기",IDC_MAXFIRSTCHILD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,185,112,10
+    RTEXT           "기본 확장자",IDC_STATIC,170,25,50,8
+    EDITTEXT        IDC_DEFEXT,230,20,66,14,ES_AUTOHSCROLL
+    RTEXT           "최근 파일 개수",IDC_STATIC,170,40,50,8
+    COMBOBOX        IDC_MAXMRU,230,40,66,108,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "권장 옵션으로",IDC_BTNDEFAULT,270,186,50,14
+END
+
+IDD_VIEW DIALOG  0, 0, 335, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "보기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "비활성화시 선택영역",IDC_STATIC,5,7,70,8
+    COMBOBOX        IDC_SEL,80,5,90,150,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "현재행 강조",IDC_STATIC,25,27,50,8
+    COMBOBOX        IDC_CUR,80,25,90,160,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "비활성화시 현재행 표시 숨김",IDC_HIDECURLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,27,105,10
+    RTEXT           "자동 개행 방식",IDC_STATIC,20,47,55,8
+    COMBOBOX        IDC_WRAP,80,45,89,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "자동개행된 줄 처음에 공백 금지",IDC_NOFIRSTSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,45,114,10
+    RTEXT           "자동 개행 열",IDC_STATIC,30,67,40,8
+    EDITTEXT        IDC_RIGHTWRAP,80,65,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0이면 창의 오른쪽 끝에서 자동 개행)",IDC_STATIC,125,71,118,8
+    RTEXT           "열 표시선",IDC_STATIC,30,87,41,8
+    EDITTEXT        IDC_COLMARK,80,85,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0이면 열 표시선 없음)",IDC_STATIC,125,87,72,8
+    GROUPBOX        "글꼴",IDC_STATIC,10,105,175,70
+    LTEXT           "서체",IDC_STATIC,20,122,15,8
+    COMBOBOX        IDC_FONTFACE,40,120,63,138,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "크기",IDC_STATIC,110,122,15,8
+    COMBOBOX        IDC_FONTSIZE,135,120,40,144,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "굵게",IDC_CHKBOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,152,30,10
+    CONTROL         "기울임",IDC_CHKITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,152,37,10
+    LTEXT           "장평",IDC_STATIC,110,153,15,8
+    EDITTEXT        IDC_EDCHARRATIO,135,150,30,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPINCHARRATIO,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,165,150,9,14
+    GROUPBOX        "헥사 뷰",IDC_STATIC,190,105,135,70
+    RTEXT           "줄당 바이트수",IDC_STATIC,200,120,50,8
+    COMBOBOX        IDC_CBBPL,265,115,50,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "바이트 구분선",IDC_STATIC,200,140,50,8
+    COMBOBOX        IDC_CBHEXSEP,265,135,50,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "16진수는 대문자로 표시",IDC_CHKCAPITAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,205,160,95,10
+    RTEXT           "줄간",IDC_STATIC,10,187,20,8
+    COMBOBOX        IDC_LINEHEIGHT,35,185,30,108,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "자간",IDC_STATIC,85,188,20,8
+    EDITTEXT        IDC_EDCHAREXTRA,110,185,25,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPINCHAREXTRA,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,135,185,9,14
+    RTEXT           "단어간격",IDC_STATIC,160,188,35,8
+    EDITTEXT        IDC_EDWORDEXTRA,200,185,25,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPINWORDEXTRA,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,224,185,9,14
+    RTEXT           "캐럿폭",IDC_STATIC,265,187,25,8
+    COMBOBOX        IDC_CARETWIDTH,295,185,30,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDIT DIALOG  0, 0, 335, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "편집"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "탭 크기",IDC_STATIC,10,16,49,8
+    COMBOBOX        IDC_TABWIDTH,66,10,60,84,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "취소 버퍼 크기",IDC_STATIC,5,34,55,8
+    COMBOBOX        IDC_UNDOLIMIT,66,28,60,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "찾기 대화상자의 첫 위치",IDC_STATIC,150,16,85,8
+    COMBOBOX        IDC_FINDDLGPOS,150,28,102,108,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "탭 크기는 문자의 평균폭 배수로 계산(비선택시 공백폭의 배수로 계산)",IDC_CALCTABWITHAVG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,60,250,10
+    CONTROL         "탭 입력시 탭 문자 대신 같은 폭의 공백 문자 입력",IDC_SPACEFORTAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,72,185,10
+    CONTROL         "입력중에 자동 들여쓰기 기능 사용",IDC_AUTOINDENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,84,155,10
+    CONTROL         "선택된 블럭을 Tab/Shift+Tab키로 통째로 들여쓰기/내어쓰기",IDC_BLOCKINDENTWITHTAB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,96,215,10
+    CONTROL         "Home키로 줄 첫 문자로 가기(비선택시 줄 처음으로)",IDC_HOMETOFIRSTCHAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,108,200,10
+    CONTROL         "현재 위치의 단어로 찾을 대상 초기화(비선택시 마지막 검색 단어)",IDC_INITFIND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,120,240,12
+    CONTROL         "다음/이전 찾기는 현재 단어를 대상으로(비선택시 마지막 검색 단어)",IDC_INITNEXTFIND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,132,245,12
+    CONTROL         "마우스로 선택영역을 드래그하여 복사 및 이동하기",IDC_ALLOWDRAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,144,190,10
+    CONTROL         "자동개행된 줄에서 좌우 이동시 줄 끝과 다음줄 처음을 구분하기",IDC_USELINEEND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,156,230,10
+    CONTROL         "검색 실패시 경보음 울리기",IDC_SOUNDFINDFAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,168,105,10
+    CONTROL         "드래그 버튼 교체(Ctrl+드래그가 이동)",IDC_SWAPDRAGBTN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,180,140,10
+END
+
+IDD_SETUP DIALOG  0, 0, 219, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "당근 편집기 설정"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,85,155,50,14
+    EDITTEXT        IDC_IS_MESSAGE,5,5,205,75,ES_MULTILINE | ES_READONLY
+    CONTROL         "탐색기의 팝업 메뉴에 당근 편집기로 열기 항목 등록(&P)",IDC_IS_POPUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,90,204,10
+    CONTROL         "바탕 화면에 당근 편집기 아이콘 만들기(&I)-안권장",IDC_IS_MAKEICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,105,180,10
+    CONTROL         "시작 메뉴에 당근 폴더 만들기(&F)-절대 안권장",IDC_IS_REGMENU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,120,167,10
+    CONTROL         "프로젝트 파일(*.&dgp), 상용구 묶음(*.dgc) 당근과 연결",IDC_IS_ASSODGP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,135,195,10
+END
+
+IDD_FIND DIALOG  0, 0, 260, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "찾기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "찾을 내용(&S)",IDC_STATIC,6,12,44,8
+    COMBOBOX        IDC_FIND_WHAT,55,5,126,156,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE,185,5,15,14
+    CONTROL         "현재 위치에서 위쪽으로 검색(&U)",IDC_FIND_UP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,30,115,10
+    CONTROL         "공백으로 구분된 완전한 단어만 검색(&W)",IDC_FIND_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,45,139,10
+    CONTROL         "영문 대/소문자 구분(&C)",IDC_FIND_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,60,90,10
+    CONTROL         "파일 끝에서 찾지 못할 경우 처음부터 검색(&O)",IDC_FIND_WRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,75,157,10
+    CONTROL         "검색이 완료된 후에 대화상자 닫기(&Q)",IDC_FIND_CLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,90,132,10
+    DEFPUSHBUTTON   "찾기(&F)",IDC_BTNFIND,205,5,50,14
+    PUSHBUTTON      "모두 찾기(&A)",IDC_BTNFINDALL,205,25,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,205,45,50,14
+END
+
+IDD_REPLACE DIALOG  0, 0, 266, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "바꾸기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "찾을 내용(&S)",IDC_STATIC,6,12,44,8
+    COMBOBOX        IDC_FIND_WHAT,55,5,126,156,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE,185,5,15,14
+    RTEXT           "바꿀 내용(&D)",IDC_STATIC,6,30,44,8
+    COMBOBOX        IDC_FIND_TO,55,25,126,156,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE2,185,25,15,14
+    CONTROL         "현재 위치에서 위쪽으로 검색(&U)",IDC_FIND_UP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,45,115,10
+    CONTROL         "공백으로 구분된 완전한 단어만 검색(&W)",IDC_FIND_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,60,139,10
+    CONTROL         "영문 대/소문자 구분(&C)",IDC_FIND_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,75,90,10
+    CONTROL         "파일 끝에서 찾지 못할 경우 처음부터 검색(&O)",IDC_FIND_WRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,90,157,10
+    DEFPUSHBUTTON   "찾기(&F)",IDC_BTNFIND,205,5,50,14
+    PUSHBUTTON      "바꾸기(&R)",IDC_BTNREPLACE,205,25,50,14
+    PUSHBUTTON      "모두 바꾸기(&A)",IDC_BTNREPLACEALL,205,45,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,205,65,50,14
+END
+
+IDD_FILEFIND DIALOG  0, 0, 252, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "파일에서 찾기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "찾을 내용(&S)",IDC_STATIC,5,10,45,8
+    COMBOBOX        IDC_FIND_WHAT,55,5,132,102,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE,190,5,15,14
+    RTEXT           "시작 폴더(&F)",IDC_STATIC,5,30,45,8
+    COMBOBOX        IDC_FIND_FOLDER,55,25,132,102,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "찾아보기(&B)",IDC_BTN_BRFOLDER,190,25,50,14
+    RTEXT           "대상 파일(&E)",IDC_STATIC,5,50,45,8
+    COMBOBOX        IDC_FIND_TYPE,55,45,132,84,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "공백으로 구분된 완전한 단어만 검색(&W)",IDC_FIND_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,65,144,10
+    CONTROL         "영문 대/소문자 구분(&C)",IDC_FIND_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,80,94,10
+    CONTROL         "하위 폴더도 검색(&R)",IDC_FIND_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,95,84,10
+    CONTROL         "시작 폴더를 기준으로 한 파일명 표시(&N)",IDC_FIND_SHORTPATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,110,149,10
+    DEFPUSHBUTTON   "찾기",IDC_BTNFIND,192,66,50,14
+    PUSHBUTTON      "취소",IDCANCEL,192,84,50,14
+END
+
+IDD_GOTOLINE DIALOG  0, 0, 143, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "줄 찾기"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "이동하고자 하는 줄 번호를 입력하십시오",IDC_STATIC,5,5,135,8
+    EDITTEXT        IDC_GOLINENUM,35,25,60,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_GOTOLINESPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,96,24,9,14
+    DEFPUSHBUTTON   "확인",IDOK,12,54,50,14
+    PUSHBUTTON      "취소",IDCANCEL,78,54,50,14
+END
+
+IDD_FILEREPLACE DIALOG  0, 0, 264, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "파일에서 바꾸기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "찾을 내용(&S)",IDC_STATIC,0,10,48,10
+    COMBOBOX        IDC_FIND_WHAT,55,5,132,102,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE,190,5,15,15
+    RTEXT           "바꿀 내용(&D)",IDC_STATIC,1,30,48,10
+    COMBOBOX        IDC_FIND_TO,55,25,132,102,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "▶",IDC_BTNINSCODE2,190,25,15,14
+    RTEXT           "시작 폴더(&F)",IDC_STATIC,0,45,47,10
+    COMBOBOX        IDC_FIND_FOLDER,55,45,132,102,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "찾아보기(&B)",IDC_BTN_BRFOLDER,190,45,59,13
+    RTEXT           "대상 파일(&E)",IDC_STATIC,0,65,48,10
+    COMBOBOX        IDC_FIND_TYPE,55,65,132,84,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "공백으로 구분된 완전한 단어만 검색(&W)",IDC_FIND_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,85,162,9
+    CONTROL         "영문 대/소문자 구분(&C)",IDC_FIND_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,100,105,9
+    CONTROL         "하위 폴더도 검색(&R)",IDC_FIND_RECURSIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,115,92,9
+    CONTROL         "시작 폴더를 기준으로 한 파일명 표시(&N)",IDC_FIND_SHORTPATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,130,141,10
+    DEFPUSHBUTTON   "바꾸기",IDC_BTNFIND,190,80,59,13
+    PUSHBUTTON      "취소",IDCANCEL,190,100,59,13
+END
+
+IDD_SYNTAX DIALOGEX 0, 0, 335, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "문법"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    LTEXT           "분석기",IDC_STATIC,12,18,25,8
+    COMBOBOX        IDC_PARSER,42,12,84,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "색상 초기화",IDC_BTNDEFSTYLE,132,12,48,14
+    LTEXT           "확장자",IDC_STATIC,12,42,22,8
+    EDITTEXT        IDC_EXT,42,36,138,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STYLE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,60,168,138
+    LTEXT           "구분자",IDC_STATIC,201,66,22,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARDELI,228,60,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "한줄 주석",IDC_STATIC,192,90,31,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARCOM,228,84,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "주석 시작",IDC_STATIC,192,114,31,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARCOMSTART,228,108,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "주석 끝",IDC_STATIC,199,138,24,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARCOMEND,228,132,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "블록 시작",IDC_STATIC,192,162,31,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARBLOCKSTART,228,156,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "블록 끝",IDC_STATIC,199,186,24,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PARBLOCKEND,228,180,78,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_COLOR DIALOG  0, 0, 334, 205
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "색상"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "글자색",IDC_STATIC,6,22,42,8
+    COMBOBOX        IDC_CFORE,54,16,78,390,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "배경색",IDC_STATIC,6,46,42,8
+    COMBOBOX        IDC_CBACK,54,40,78,426,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "선택 글자색",IDC_STATIC,6,70,42,8
+    COMBOBOX        IDC_CSELFORE,54,64,78,396,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "선택 배경색",IDC_STATIC,6,94,42,8
+    COMBOBOX        IDC_CSELBACK,54,88,78,372,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "마진색",IDC_STATIC,6,118,42,8
+    COMBOBOX        IDC_MARCOLOR1,54,112,78,354,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "마진 경계색",IDC_STATIC,6,142,42,8
+    COMBOBOX        IDC_MARCOLOR2,54,136,78,354,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "책갈피 색",IDC_STATIC,6,166,42,8
+    COMBOBOX        IDC_MARKCOLOR,54,160,78,396,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "제어코드",IDC_STATIC,195,17,42,8
+    COMBOBOX        IDC_CODECOLOR,248,15,78,408,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "현재행 강조",IDC_STATIC,190,42,50,8
+    COMBOBOX        IDC_CURCOLOR,248,40,78,378,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "줄번호",IDC_STATIC,198,66,42,8
+    COMBOBOX        IDC_NUMCOLOR,248,64,78,366,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "선택 블록 외곽선",IDC_STATIC,170,91,72,8
+    COMBOBOX        IDC_SELFRAMECOLOR,248,89,78,366,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "안쪽 여백",IDC_STATIC,200,116,42,8
+    COMBOBOX        IDC_INNERRECTCOLOR,248,114,78,366,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "눈금자",IDC_STATIC,200,141,42,8
+    COMBOBOX        IDC_RULERCOLOR,248,139,78,366,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_UNINSTALL DIALOG  0, 0, 270, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "설치 정보 삭제"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,78,96,50,14
+    PUSHBUTTON      "취소",IDCANCEL,138,96,50,14
+    LTEXT           "이 명령은 시스템의 당근 관련 정보를 모두 삭제합니다.\r\n확인 버튼을 누르시면 다음 작업을 진행하며 프로그램은 종료됩니다.",IDC_STATIC,6,12,252,24
+    LTEXT           "▶ 레지스트리의 설정 정보 삭제",IDC_STATIC,5,45,126,8
+    LTEXT           "▶ 탐색기의 팝업 메뉴에서 당근 편집기 제거",IDC_STATIC,5,55,138,8
+    LTEXT           "▶ 당근과 연결된 확장자 모두 복구",IDC_STATIC,5,65,110,8
+END
+
+IDD_FTP DIALOG  0, 0, 359, 283
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP 파일 열기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "접속 대상(&S)",IDC_STATIC,6,10,44,8
+    COMBOBOX        IDC_FTPSERVER,55,5,59,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "연결(&C)",IDC_BTNFTPCONNECT,120,5,42,14
+    PUSHBUTTON      "서버 추가(&A)",IDC_BTNFTPADD,190,5,52,14
+    PUSHBUTTON      "서버 수정(&E)",IDC_BTNFTPEDIT,245,5,52,14
+    PUSHBUTTON      "서버 삭제(&R)",IDC_BTNFTPDELETE,300,5,52,14
+    CONTROL         "",IDC_FTPFILE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,30,289,225
+    PUSHBUTTON      "열기(&O)",IDC_BTNFTPOPEN,300,30,50,14,WS_DISABLED
+    PUSHBUTTON      "새 파일(&N)",IDC_BTNFTPNEW,300,50,50,14,WS_DISABLED
+    PUSHBUTTON      "새 폴더(&F)",IDC_BTNFTPNEWFOLDER,300,70,50,14,WS_DISABLED
+    PUSHBUTTON      "이름변경(&R)",IDC_BTNFTPRENAME,300,90,50,14,WS_DISABLED
+    PUSHBUTTON      "삭제(&L)",IDC_BTNFTPDEL,300,110,50,14,WS_DISABLED
+    PUSHBUTTON      "다운로드(&D)",IDC_BTNFTPDOWN,300,130,50,14,WS_DISABLED
+    PUSHBUTTON      "업로드(&U)",IDC_BTNFTPUP,300,150,50,14,WS_DISABLED
+    CONTROL         "현재 상태 : 연결 안되었음",IDC_STFTPSTATUS,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,5,265,345,12
+    PUSHBUTTON      "닫기",IDCANCEL,300,240,50,14
+END
+
+IDD_FTPCONFIG DIALOG  0, 0, 174, 171
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP 바보. 우헤헤~ 어차피 바뀔건데 뭐."
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "접속명(&N)",IDC_STATIC,15,20,36,8
+    EDITTEXT        IDC_FTPNAME,60,15,102,14,ES_AUTOHSCROLL
+    RTEXT           "서버 주소(&S)",IDC_STATIC,5,45,45,8
+    EDITTEXT        IDC_FTPADDR,60,40,102,14,ES_AUTOHSCROLL
+    RTEXT           "사용자 &ID",IDC_STATIC,5,70,45,8
+    EDITTEXT        IDC_FTPUSER,60,65,102,14,ES_AUTOHSCROLL
+    RTEXT           "비밀번호(&P)",IDC_STATIC,5,95,45,8
+    EDITTEXT        IDC_FTPPASS,60,90,102,14,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "포트 번호(&T)",IDC_STATIC,5,120,45,8
+    EDITTEXT        IDC_FTPPORT,60,114,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "확인",IDOK,42,150,50,14
+    PUSHBUTTON      "취소",IDCANCEL,102,150,50,14
+END
+
+IDD_HTTP DIALOG  0, 0, 271, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HTTP 열기"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "파일 위치(&URL)",IDC_STATIC,5,15,54,8
+    EDITTEXT        IDC_HTTPFILE,66,12,194,14,ES_AUTOHSCROLL
+    LTEXT           "프로토콜의 특성상 다운로드만 가능하며 새 이름으로 저장할 수 있습니다\r\n대소문자를 구분하는 웹 서버의 경우 URL의 대소문자 구성이 정확해야 합니다.",IDC_STATIC,6,36,259,18
+    DEFPUSHBUTTON   "확인",IDOK,72,66,50,14
+    PUSHBUTTON      "취소",IDCANCEL,138,66,50,14
+END
+
+IDD_NEWPROJECT DIALOG  0, 0, 279, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "야호! 새 프로젝트다."
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "파일 이름 및 위치",IDC_STATIC,0,18,66,8
+    EDITTEXT        IDC_PRJNEWFILE,70,10,150,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "위치 지정(&B)",IDC_BTNBRPROJECT,225,10,48,14
+    RTEXT           "프로젝트 이름(&N)",IDC_STATIC,0,35,65,8
+    EDITTEXT        IDC_PRJNEWNAME,70,30,150,14,ES_AUTOHSCROLL
+    RTEXT           "프로젝트 설명(&D)",IDC_STATIC,0,55,65,8
+    EDITTEXT        IDC_PRJNEWDESC,70,50,150,14,ES_AUTOHSCROLL
+    GROUPBOX        "프로젝트내의 파일 경로",IDC_STATIC,6,72,214,48
+    CONTROL         "파일 위치에 상관없이 항상 절대 경로로 저장(&A)",IDC_PRJABSOLUTE,"Button",BS_AUTORADIOBUTTON,12,90,178,10
+    CONTROL         "프로젝트의 하위 폴더에 있는 파일은 상대 경로로 저장(&R)",IDC_PRJRELATIVE,
+                    "Button",BS_AUTORADIOBUTTON,12,102,203,10
+    DEFPUSHBUTTON   "확인",IDOK,225,85,50,14
+    PUSHBUTTON      "취소",IDCANCEL,225,100,50,14
+END
+
+IDD_PROJECT DIALOG  0, 0, 289, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "프로젝트 관리"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "프로젝트 파일",IDC_STATIC,6,12,54,8
+    EDITTEXT        IDC_PRJFILE,66,6,138,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "프로젝트 이름",IDC_STATIC,6,30,54,8
+    EDITTEXT        IDC_PRJNAME,66,24,138,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "프로젝트 설명",IDC_STATIC,6,48,54,8
+    EDITTEXT        IDC_PRJDESC,66,42,138,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "새 프로젝트(&N)",IDC_BTNPRJNEW,216,6,64,14
+    PUSHBUTTON      "프로젝트 열기(&O)",IDC_BTNPRJOPEN,216,24,64,14
+    PUSHBUTTON      "프로젝트 수정(&E)",IDC_BTNPRJEDIT,216,42,64,14
+    CONTROL         "",IDC_PRJTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,6,66,198,144
+    PUSHBUTTON      "파일 추가(&A)",IDC_BTNPRJFILE,216,66,64,14
+    PUSHBUTTON      "FTP 파일 추가(&F)",IDC_BTNPRJFTP,216,84,64,14
+    PUSHBUTTON      "HTTP 파일 추가(&H)",IDC_BTNPRJHTTP,216,102,64,14
+    PUSHBUTTON      "폴더 링크 추가(&L)",IDC_BTNPRJFOLDER,216,120,64,14
+    PUSHBUTTON      "삭제(&D)",IDC_BTNPRJDELETE,216,138,64,14
+    PUSHBUTTON      "새 하위 묶음(&S)",IDC_BTNPRJSUB,216,156,64,14
+    PUSHBUTTON      "묶음 이름 변경(&R)",IDC_BTNPRJRENAME,216,173,64,14,BS_CENTER
+    PUSHBUTTON      "유효성 점검(&V)",IDC_BTNPRJTEST,216,192,64,14
+    LTEXT           "항목을 끌어서 위치를 바꿀 수 있으며 탐색기에서 파일을 끌어 추가할 수 있습니다.",IDC_STATIC,6,216,274,8
+    LTEXT           "파일/열기 명령으로 프로젝트(*.dgp)를 여시면 파일창에 프로젝트가 나타납니다.",IDC_STATIC,6,228,274,8
+    PUSHBUTTON      "확인",IDOK,78,246,60,14
+    PUSHBUTTON      "취소",IDCANCEL,150,246,60,14
+END
+
+IDD_PRINT DIALOG  0, 0, 335, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "인쇄"
+FONT 9, "굴림"
+BEGIN
+    GROUPBOX        "용지 여백(mm)",IDC_STATIC,6,12,156,72
+    LTEXT           "위쪽",IDC_STATIC,48,30,15,8
+    EDITTEXT        IDC_PRTTOP,72,24,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PRTTOPSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,102,24,9,14
+    LTEXT           "왼쪽",IDC_STATIC,12,48,15,8
+    EDITTEXT        IDC_PRTLEFT,36,42,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PRTLEFTSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,66,42,9,14
+    LTEXT           "오른쪽",IDC_STATIC,84,48,22,8
+    EDITTEXT        IDC_PRTRIGHT,108,42,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PRTRIGHTSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,138,42,9,14
+    LTEXT           "아래쪽",IDC_STATIC,48,66,22,8
+    EDITTEXT        IDC_PRTBOTTOM,72,60,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_PRTBOTTOMSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,102,60,9,14
+    GROUPBOX        "인쇄글꼴",IDC_STATIC,168,12,162,72
+    CONTROL         "화면 글꼴과 동일한 글꼴로 인쇄",IDC_PRTFONTSCREEN,"Button",BS_AUTORADIOBUTTON,174,24,114,10
+    CONTROL         "별도의 인쇄 글꼴 지정",IDC_PRTFONTPRINT,"Button",BS_AUTORADIOBUTTON,174,36,85,10
+    LTEXT           "글꼴",IDC_STATIC,175,65,15,8
+    COMBOBOX        IDC_PRTFONTFACE,195,60,65,276,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "크기",IDC_STATIC,270,65,15,8
+    COMBOBOX        IDC_PRTFONTSIZE,290,60,36,168,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "머리말",IDC_STATIC,6,108,22,8
+    EDITTEXT        IDC_PRTHEADER,30,102,174,14,ES_AUTOHSCROLL | ES_NOHIDESEL
+    PUSHBUTTON      "예약어 삽입",IDC_PRTBTNHEADER,210,102,42,14
+    LTEXT           "구분선",IDC_STATIC,258,108,22,8
+    COMBOBOX        IDC_PRTHEADERWIDTH,288,102,42,138,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "꼬리말",IDC_STATIC,6,126,22,8
+    EDITTEXT        IDC_PRTFOOTER,30,120,174,14,ES_AUTOHSCROLL | ES_NOHIDESEL
+    PUSHBUTTON      "예약어 삽입",IDC_PRTBTNFOOTER,210,120,42,14
+    LTEXT           "구분선",IDC_STATIC,258,126,22,8
+    COMBOBOX        IDC_PRTFOOTERWIDTH,288,120,42,162,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "문법 분석 결과를 색상으로 출력",IDC_PRTPARSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,150,114,10
+    CONTROL         "왼쪽 여백에 줄번호 출력",IDC_PRTLINENUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,162,91,10
+    CONTROL         "머리말, 꼬리말은 항상 시스템 글꼴로 출력",IDC_PRTSYSHEADER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,174,146,10
+    CONTROL         "기본 프린터로 바로 인쇄",IDC_PRTDIRECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,186,91,10
+    RTEXT           "배경 텍스트",IDC_STATIC,165,155,45,8
+    COMBOBOX        IDC_PRTBKTEXT,216,150,114,156,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "개행 방식",IDC_STATIC,170,175,40,8
+    COMBOBOX        IDC_PRTWRAP,216,168,114,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PRINTING DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "인쇄중..."
+FONT 9, "굴림", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,63,66,50,14
+    LTEXT           "인쇄 준비중",IDC_PRINTINGMES,12,42,162,8
+    LTEXT           "Static",IDC_PRINTINGDOC,12,24,168,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 223, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "프로그램 소개"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "닫기",IDOK,165,141,50,14
+    CTEXT           "당근 텍스트 편집기 Version 1.22VS2017",IDC_STATIC,5,10,210,8
+    CTEXT           "정식 버전",IDC_STATIC,5,22,210,8
+    GROUPBOX        "등록 정보",IDC_STATIC,5,40,210,50
+    LTEXT           "등록자",IDC_ABOUT_USER,10,55,200,8
+    LTEXT           "등록 날짜",IDC_ABOUT_DATE,10,70,200,8
+    LTEXT           "이 프로그램은 기능 평가를 위한 셰어웨어(ShareWare) MIT라이센스 이며  최초 실행 후 1년이후에도  모든 기능을 사용할 수 있습니다.",IDC_STATIC,5,105,210,20
+    PUSHBUTTON      "등록 안내(&R)",IDC_ABOUT_REGISTER,105,141,50,14
+END
+
+IDD_DOWNLOAD DIALOG  0, 0, 290, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "다운로드"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,119,65,50,14
+    LTEXT           "",IDC_STDOWN1,5,10,275,8
+    LTEXT           "",IDC_STDOWN2,5,25,275,8
+    CONTROL         "Progress1",IDC_PRODOWN,"msctls_progress32",WS_BORDER,5,40,275,14
+END
+
+IDD_FILE DIALOG  0, 0, 334, 205
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "파일"
+FONT 9, "굴림"
+BEGIN
+    GROUPBOX        "백업",IDC_STATIC,5,5,180,90
+    RTEXT           "백업 단계",IDC_STATIC,10,21,43,8
+    COMBOBOX        IDC_BACKUPLEVEL,60,15,90,110,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "백업 파일명",IDC_STATIC,10,41,43,8
+    COMBOBOX        IDC_BACKUPNAMING,60,35,90,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "백업 폴더",IDC_STATIC,10,61,43,8
+    EDITTEXT        IDC_BACKUPFOLDER,60,55,115,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "찾아보기",IDC_BRBACKUPFOLDER,60,75,50,14
+    PUSHBUTTON      "당근/BackUp",IDC_BRDGBACKUP,120,75,50,14
+    GROUPBOX        "자동 저장",IDC_STATIC,195,5,130,90
+    LTEXT           "자동 저장 간격(분)",IDC_STATIC,205,20,70,8
+    EDITTEXT        IDC_AUTOSAVE,205,35,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINAUTOSAVE,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,245,35,9,14
+    LTEXT           "0이면 자동 저장하지 않음",IDC_STATIC,205,75,95,8
+    GROUPBOX        "편집 정보 작성",IDC_STATIC,5,100,320,95
+    CONTROL         "편집 정보 파일 작성",IDC_MAKEEDITINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,110,78,10
+    CONTROL         "파일이 변경되지 않아도 편집 정보 항상 저장",IDC_UPDATEEDITINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,125,165,10
+    CONTROL         "편집 정보 파일 사용",IDC_USEEDITINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,140,78,10
+    RTEXT           "저장 폴더",IDC_STATIC,10,160,40,8
+    EDITTEXT        IDC_EDITINFOFOLDER,60,155,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "찾아보기",IDC_BREDITINFOFOLDER,60,175,50,14
+    PUSHBUTTON      "당근/EditInfo",IDC_BRDGEDITINFO,120,175,50,14
+    CONTROL         "편집 위치 저장",IDC_EIOFFSET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,115,62,10
+    CONTROL         "선택 영역 저장",IDC_EISELECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,131,62,10
+    CONTROL         "북마크 설정 저장",IDC_EIBOOKMARK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,145,69,10
+    CONTROL         "편집 기록 저장",IDC_EIUNDORECORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,161,62,10
+    CONTROL         "개행,줄간,글꼴 설정 저장",IDC_EISETTING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,175,94,10
+END
+
+IDD_EDITRECORD DIALOGEX 0, 0, 119, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CONTROLPARENT
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "닫기",IDCANCEL,92,211,25,14
+    CONTROL         "List1",IDC_UNDOLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,118,210
+    PUSHBUTTON      "실행중에 바뀌는 캡션",IDC_MULTIUR,0,211,91,14
+END
+
+IDD_READMODE DIALOG  0, 0, 115, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "읽기 모드"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "글꼴:",IDC_STATIC,5,10,20,8
+    COMBOBOX        IDC_RMFONT,25,5,48,113,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RMFONTSIZE,80,5,20,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_RMSPINFONTSIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,100,5,9,14
+    LTEXT           "줄간",IDC_STATIC,5,29,15,8
+    EDITTEXT        IDC_RMLINERATIO,25,25,20,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin2",IDC_RMSPINLINERATIO,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,45,25,9,14
+    CONTROL         "자동개행",IDC_RMWRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,30,43,10
+    GROUPBOX        "자동 스크롤 옵션",IDC_STATIC,5,45,105,75
+    LTEXT           "주기 :",IDC_RMFREQ,10,60,90,8
+    CONTROL         "Slider1",IDC_RMSLFREQ,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,10,70,95,15
+    LTEXT           "줄수 :",IDC_RMLINENUM,10,90,90,8
+    CONTROL         "Slider1",IDC_RMSLLINENUM,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,10,100,95,15
+    CONTROL         "자동 스크롤",IDC_RMAUTOSCROLL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,5,125,40,15
+    EDITTEXT        IDC_RMMANUAL,50,125,15,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin3",IDC_RMSPINMANUAL,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,65,125,9,14
+    PUSHBUTTON      "줄 아래로",IDC_RMBTNMANUAL,75,125,35,14
+END
+
+IDD_OPERATION DIALOG  0, 0, 334, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "동작"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "휠의 동작",IDC_STATIC,5,15,70,8
+    COMBOBOX        IDC_WHEEL,80,10,85,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Ctrl+휠의 동작",IDC_STATIC,5,35,70,8
+    COMBOBOX        IDC_CTRLWHEEL,80,30,85,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Shift+휠의 동작",IDC_STATIC,5,55,70,8
+    COMBOBOX        IDC_SHIFTWHEEL,80,50,85,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Ctrl+Shift+휠의 동작",IDC_STATIC,5,75,70,8
+    COMBOBOX        IDC_CTRLSHIFTWHEEL,80,70,85,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "입력중 커서 처리",IDC_STATIC,5,95,70,8
+    COMBOBOX        IDC_CBCURSOREDIT,80,90,85,115,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "새로 열리는 창은 자동 개행 상태로 시작하기",IDC_WORDWRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,115,155,10
+    CONTROL         "새로 열리는 창은 한글 입력 상태로 시작하기",IDC_HANGUL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,130,155,10
+    CONTROL         "파일 포맷 자동 판별하기",IDC_AUTOCONVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,145,155,10
+    CONTROL         "상용구 내용을 툴팁으로 미리 보기",IDC_PREVIEWCLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,115,125,10
+    CONTROL         "자동 상용구 삽입 기능 사용",IDC_USEAUTOCLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,130,110,10
+    CONTROL         "Tab키로 자동 상용구 삽입(비선택시 Space키)",IDC_AUTOCLIPBYTAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,145,165,10
+    CONTROL         "잘라내기, 붙여넣기, 이동시 공백 자동 조정",IDC_CHKSMARTSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,160,155,10
+END
+
+IDD_MACRO DIALOG  0, 0, 359, 245
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 정의"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "List1",IDC_RECENTCOM,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,155,45,195,175
+    RTEXT           "매크로(&M)",IDC_STATIC,5,15,40,8
+    COMBOBOX        IDC_CBMACRO,50,10,75,135,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "새 매크로(&N)",IDC_BTNNEWMACRO,130,10,45,14
+    PUSHBUTTON      "수정(&E)",IDC_BTNEDITMACRO,180,10,35,14,WS_DISABLED
+    PUSHBUTTON      "삭제(&D)",IDC_BTNDELETEMACRO,220,10,35,14,WS_DISABLED
+    PUSHBUTTON      "실행(&X)",IDC_BTNRUNMACRO,260,10,35,14,WS_DISABLED
+    EDITTEXT        IDC_MACROCOUNT,300,10,20,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINMACROCOUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,320,10,9,14
+    LTEXT           "회",IDC_STATIC,335,15,15,8
+    PUSHBUTTON      "명령 추가(&A)",IDC_BTNMAKECOMMAND,85,225,60,14,WS_DISABLED
+    PUSHBUTTON      "선택된 최근 편집 동작 추가(&I)",IDC_BTNCOPYRECENT,155,225,135,14,WS_DISABLED
+    PUSHBUTTON      "닫기",IDCANCEL,300,225,50,14
+    LTEXT           "매크로 내용(&C)",IDC_STATIC,5,35,55,8
+    PUSHBUTTON      "Button1",IDC_PLACEAPIEDIT,5,45,140,175,NOT WS_VISIBLE
+    LTEXT           "최근 편집 동작(마우스 동작은 제외)(&R)",IDC_STATIC,155,35,125,8
+END
+
+IDD_EDITMACRO DIALOG  0, 0, 203, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 수정 및 새 매크로"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "이름(&N)",IDC_STATIC,10,15,30,8
+    EDITTEXT        IDC_MACRONAME,45,10,150,14,ES_AUTOHSCROLL
+    LTEXT           "매크로의 이름은 최대 64자까지 지정할 수 있습니다.",IDC_STATIC,10,30,180,8
+    CONTROL         "이 매크로에 단축키 지정(&A)",IDC_CHKMACROSHORTCUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,55,102,10
+    RTEXT           "가상키(&V)",IDC_STATIC,0,75,40,8
+    COMBOBOX        IDC_CBKEY,45,70,50,205,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Ctrl",IDC_CHKCTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,75,30,8
+    CONTROL         "&Alt",IDC_CHKALT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,75,30,8
+    CONTROL         "&Shift",IDC_CHKSHIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,75,30,10
+    DEFPUSHBUTTON   "확인",IDOK,45,115,50,14
+    PUSHBUTTON      "취소",IDCANCEL,105,115,50,14
+    LTEXT           "이 단축키의 현재 기능 : 할당되지 않음",IDC_STSHORTCUT,10,90,190,8
+END
+
+IDD_ADDCOMMAND DIALOG  0, 0, 215, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "명령 추가"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "동작(&V)",IDC_STATIC,5,7,25,8
+    LISTBOX         IDC_LISTVERB,5,15,95,185,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "입력 내용",IDC_STSTRING1,110,15,60,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDSTRING1,110,25,95,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "바꿀 내용",IDC_STSTRING2,110,51,60,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDSTRING2,110,61,95,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "위쪽으로 검색(&U)",IDC_FIND_UP,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,110,85,70,10
+    CONTROL         "완전한 단어만 검색(&W)",IDC_FIND_WHOLEWORD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,110,97,87,10
+    CONTROL         "영문 대/소문자 구분(&C)",IDC_FIND_MATCHCASE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,110,109,90,10
+    CONTROL         "끝에서 되돌리기(&O)",IDC_FIND_WRAP,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,110,121,77,10
+    LTEXT           "대상(&B)",IDC_STOBJECT,110,5,60,8,NOT WS_VISIBLE
+    LISTBOX         IDC_LISTOBJECT,110,15,95,160,LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "반복회수",IDC_STCOUNT,110,190,35,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDCOUNT,150,185,30,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_VISIBLE
+    CONTROL         "Spin1",IDC_SPINCOUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,180,185,10,14
+    LTEXT           "명령(&S)",IDC_STATIC,5,215,25,8
+    EDITTEXT        IDC_EDCOMMAND,35,210,170,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "확인",IDOK,50,235,50,14
+    PUSHBUTTON      "취소",IDCANCEL,110,235,50,14
+END
+
+IDD_SHORTCUT DIALOG  0, 0, 215, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "단축키 추가 또는 편집"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "가상키(&V)",IDC_STATIC,10,15,35,8
+    COMBOBOX        IDC_CBKEY,50,10,48,205,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Ctrl",IDC_CHKCTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,15,25,8
+    CONTROL         "&Alt",IDC_CHKALT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,15,20,8
+    CONTROL         "&Shift",IDC_CHKSHIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,175,15,25,8
+    LTEXT           "이 단축키의 현재 기능 : 할당되지 않음",IDC_STSHORTCUT,10,30,190,8
+    CONTROL         "메뉴 항목에서 선택(&M)",IDC_RADIOID,"Button",BS_AUTORADIOBUTTON,10,50,90,10
+    COMBOBOX        IDC_CBMENUCOM,10,65,135,275,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "명령 작성(&O)",IDC_RADIOCOMMAND,"Button",BS_AUTORADIOBUTTON,10,85,55,10
+    EDITTEXT        IDC_EDCOMMAND,10,100,135,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "명령 추가(&I)",IDC_BTNADDCOMMAND,155,100,50,14
+    DEFPUSHBUTTON   "확인",IDOK,50,130,50,14
+    PUSHBUTTON      "취소",IDCANCEL,110,130,50,14
+END
+
+IDD_SHORTCUTLIST DIALOG  0, 0, 283, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "단축키 목록"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "등록된 단축키(&L)",IDC_STATIC,5,5,60,8
+    CONTROL         "List1",IDC_SHORTCUTLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,5,15,270,230
+    PUSHBUTTON      "추가(&A)",IDC_BTNADD,5,250,50,14
+    PUSHBUTTON      "수정(&E)",IDC_BTNEDIT,60,250,50,14
+    PUSHBUTTON      "삭제(&D)",IDC_BTNDELETE,115,250,50,14
+    PUSHBUTTON      "기본(&S)",IDC_BTNDEFAULT,170,250,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,225,250,50,14
+    LTEXT           "Alt+F4(종료), Ctrl+F4(창닫기), Ctrl+F6(창전환), F6(뷰전환) 등은 시스템 표준 단축키입니다. 불가피한 경우외에는 재정의하지 마십시오.",IDC_STATIC,5,270,270,20
+END
+
+IDD_CLIPFILE DIALOG  0, 0, 374, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "상용구 관리"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "상용구 파일",IDC_STATIC,5,10,48,8
+    EDITTEXT        IDC_CLIPFILE,65,5,155,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "묶음 이름(&M)",IDC_STATIC,5,30,48,8
+    EDITTEXT        IDC_CLIPNAME,65,25,155,14,ES_AUTOHSCROLL
+    RTEXT           "묶음 설명(&C)",IDC_STATIC,5,50,48,8
+    EDITTEXT        IDC_CLIPDESC,65,45,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "새 묶음(&N)",IDC_BTNCLIPFILENEW,230,5,65,14
+    PUSHBUTTON      "묶음 열기(&O)",IDC_BTNCLIPFILEOPEN,300,5,65,14
+    DEFPUSHBUTTON   "저장후 닫기",IDOK,230,25,65,14
+    PUSHBUTTON      "취소",IDCANCEL,300,25,65,14
+    LTEXT           "상용구 목록(&L)",IDC_STATIC,5,70,55,8
+    CONTROL         "",IDC_CLIPTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,5,81,130,144
+    LTEXT           "미리 보기",IDC_STATIC,140,70,35,8
+    PUSHBUTTON      "상용구 미리보기",IDC_PLACEAPIEDIT,140,80,225,145,NOT WS_VISIBLE
+    PUSHBUTTON      "상용구 추가(&A)",IDC_BTNCLIPADDCLIP,5,230,64,14
+    PUSHBUTTON      "폴더 추가(&S)",IDC_BTNCLIPADDFOLDER,80,230,64,14
+    PUSHBUTTON      "편집(&E)",IDC_BTNCLIPEDIT,150,230,65,14
+    PUSHBUTTON      "삭제(&D)",IDC_BTNCLIPDELETE,225,230,65,14
+    PUSHBUTTON      "이름변경(&R)",IDC_BTNCLIPRENAME,300,230,65,14
+END
+
+IDD_RUNMACRO DIALOG  0, 0, 187, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매크로 반복 실행중"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,65,45,50,14
+    CTEXT           "매크로 이름",IDC_MACRONAME,10,10,170,8
+    CTEXT           "반복회수",IDC_MACRONUM,10,25,175,8
+END
+
+IDD_EDITCLIP DIALOG  0, 0, 359, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "상용구 편집"
+FONT 9, "굴림"
+BEGIN
+    RTEXT           "이름(&N)",IDC_STATIC,5,165,50,8
+    EDITTEXT        IDC_EDCLIPNAME,61,160,79,14,ES_AUTOHSCROLL
+    RTEXT           "자동삽입명(&A)",IDC_STATIC,5,185,50,8
+    EDITTEXT        IDC_EDCLIPAUTONAME,61,180,79,14,ES_AUTOHSCROLL
+    RTEXT           "문법(&S)",IDC_STATIC,10,205,45,8
+    COMBOBOX        IDC_CBCLIPSYNTAX,61,200,79,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "기본 동작(&D)",IDC_STATIC,10,225,45,8
+    COMBOBOX        IDC_CBCLIPDEFACTION,61,220,79,95,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "도움말\r\n\r\n이름 생략시 내용의 앞 부분을 대신 사용합니다.\r\n자동삽입명은 공백없이 가급적 짧게 작성하십시오.\r\n상용구 삽입 후 ^|^ 표식 다음으로 캐럿이 이동합니다. \r\n^|^ 표식이 두 개일 경우 이 영역이 선택됩니다.",IDC_STATIC,155,160,195,55
+    DEFPUSHBUTTON   "확인",IDOK,115,245,50,14
+    PUSHBUTTON      "취소",IDCANCEL,195,245,50,14
+    LTEXT           "내용(&C)",IDC_STATIC,5,5,30,8
+    PUSHBUTTON      "상용구 편집창",IDC_PLACEAPIEDIT,5,15,350,140,NOT WS_VISIBLE
+END
+
+IDD_SHAPE DIALOG  0, 0, 334, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "모양"
+FONT 9, "굴림"
+BEGIN
+    GROUPBOX        "편집영역 안쪽 여백(픽셀)",IDC_STATIC,5,10,145,95
+    LTEXT           "위쪽",IDC_STATIC,61,25,15,8
+    EDITTEXT        IDC_FRTTOP,61,35,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRTTOPSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,91,35,9,14
+    LTEXT           "왼쪽",IDC_STATIC,26,40,15,8
+    EDITTEXT        IDC_FRTLEFT,25,53,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRTLEFTSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,55,53,9,14
+    LTEXT           "오른쪽",IDC_STATIC,111,40,22,8
+    EDITTEXT        IDC_FRTRIGHT,97,53,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRTRIGHTSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,127,53,9,14
+    LTEXT           "아래쪽",IDC_STATIC,61,90,22,8
+    EDITTEXT        IDC_FRTBOTTOM,61,71,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FRTBOTTOMSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,91,71,9,14
+    GROUPBOX        "배경 그림",IDC_STATIC,155,10,175,95
+    EDITTEXT        IDC_EDBACKBIT,160,20,165,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "샘플 그림중에서 선택",IDC_STATIC,180,42,67,8
+    COMBOBOX        IDC_CBSAMPLEBITMAP,265,40,58,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "찾아보기",IDC_BTNBRBACKBIT,160,60,50,14
+    PUSHBUTTON      "제거",IDC_BTNREMOVEBACKBIT,215,60,50,14
+    LTEXT           "그림 배치 방법",IDC_STATIC,160,85,50,8
+    COMBOBOX        IDC_CBBACKBITPOS,215,80,85,105,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "눈금자 표시",IDC_SHOWRULER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,115,60,10
+    CONTROL         "마진 영역 표시",IDC_MARGIN,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,131,62,10
+    CONTROL         "줄번호 보기",IDC_LINENUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,145,53,10
+    CONTROL         "개행 코드 표시",IDC_SHOWENTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,115,62,10
+    CONTROL         "탭 코드 표시",IDC_SHOWTAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,130,55,10
+    CONTROL         "공백 코드 표시",IDC_SHOWSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,145,62,10
+    RTEXT           "선택 블록의 모양",IDC_STATIC,180,121,59,8
+    COMBOBOX        IDC_CBSELBLOCKTYPE,250,115,80,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "문자의 수직 위치",IDC_STATIC,180,137,59,8
+    COMBOBOX        IDC_CBVALIGN,250,135,80,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIRMSAVE DIALOG  0, 0, 323, 139
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "미저장 문서 확인"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "다음 파일들이 저장되지 않았습니다. 어떻게 하시겠습니까?",IDC_STATIC,10,7,306,8
+    CONTROL         "List1",IDC_LISTNOSAVED,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,20,310,90
+    PUSHBUTTON      "모두 저장(&A)",IDC_BTNSAVEALL,10,120,90,14
+    PUSHBUTTON      "선택한 파일만 저장(&S)",IDC_BTNSAVECHECKED,110,120,90,14
+    PUSHBUTTON      "모두 버림(&D)",IDC_BTNDISCARDALL,210,120,50,14
+    PUSHBUTTON      "취소",IDCANCEL,270,120,50,14
+END
+
+IDD_CONFIRMRELOAD DIALOG  0, 0, 323, 139
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "변경 문서 확인"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "다음 파일들이 다른 프로그램에 의해 편집되었습니다. 어떻게 하시겠습니까?",IDC_STATIC,10,7,235,8
+    CONTROL         "List1",IDC_LISTNOSAVED,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,20,310,90
+    PUSHBUTTON      "모두 갱신(&A)",IDC_BTNSAVEALL,10,120,90,14
+    PUSHBUTTON      "모두 무시(&D)",IDCANCEL,230,120,90,14
+    PUSHBUTTON      "선택한 파일만 갱신&S)",IDC_BTNSAVECHECKED,120,120,90,14
+END
+
+IDD_SPECIAL DIALOG  0, 0, 329, 149
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "특수 문자 삽입"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "코드",IDC_STCODE,80,135,15,8
+    EDITTEXT        IDC_EDCODE,100,130,65,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "삽입(&I)",IDOK,220,130,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,275,130,50,14
+    LTEXT           "범례(&A)",IDC_STATIC,5,5,25,8
+    LISTBOX         IDC_LISTCATEGORY,5,20,70,105,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "문자(&C)",IDC_STATIC,80,5,60,8
+    PUSHBUTTON      "Button1",IDC_BTNCHARMAP,80,20,245,105,NOT WS_VISIBLE
+END
+
+IDD_TOOLBAR DIALOG  0, 0, 334, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "툴바"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "상태란",IDC_STATIC,5,5,22,8
+    CONTROL         "List1",IDC_LISTSTATUS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,5,20,200,170
+    PUSHBUTTON      "위로 이동",IDC_BTNSTUP,215,20,50,14
+    PUSHBUTTON      "아래로 이동",IDC_BTNSTDOWN,275,20,50,14
+    LTEXT           "폭 지정",IDC_STATIC,215,50,24,8
+    CONTROL         "Slider1",IDC_SLIDERSTWIDTH,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,250,45,75,15
+    CONTROL         "왼쪽",IDC_RASTLEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,215,75,30,10
+    CONTROL         "중앙",IDC_RASTCENTER,"Button",BS_AUTORADIOBUTTON,250,75,30,10
+    CONTROL         "오른쪽",IDC_RASTRIGHT,"Button",BS_AUTORADIOBUTTON,285,75,37,10
+    CONTROL         "양각 모양",IDC_CHKPOPOUT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,215,95,46,10
+    CONTROL         "툴바에 큰 아이콘 사용",IDC_TOOLBARBIG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,170,85,10
+    CONTROL         "툴바에 설명 표시",IDC_TOOLBARTEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,182,69,10
+END
+
+IDD_PARA1 DIALOG  0, 0, 262, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "개행 코드를 제거하거나 다른 문자(열)로 대체하여 선택된 문단을 하나로 합칩니다.",IDC_STATIC,10,5,235,25
+    GROUPBOX        "개행코드 처리 방식",IDC_STATIC,10,45,240,60
+    CONTROL         "개행 코드 삭제(&D)",IDC_P1_RA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,60,78,10
+    CONTROL         "공백 문자로 대체(&S)",IDC_P1_RA2,"Button",BS_AUTORADIOBUTTON,20,70,82,10
+    CONTROL         "탭 문자로 대체(&T)",IDC_P1_RA3,"Button",BS_AUTORADIOBUTTON,20,80,75,10
+    CONTROL         "기타 문자열로 대체(&E)",IDC_P1_RA4,"Button",BS_AUTORADIOBUTTON,20,90,90,10
+    EDITTEXT        IDC_P1_ED1,135,85,105,14,ES_AUTOHSCROLL | WS_GROUP
+    RTEXT           "복수 개의 개행 코드에 대한 처리(&M)",IDC_STATIC,10,125,120,8
+    COMBOBOX        IDC_P1_CB1,135,120,115,105,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PARA DIALOG  0, 0, 274, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "문단 재구성"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tab1",IDC_PARATAB,"SysTabControl32",TCS_FOCUSONBUTTONDOWN | WS_TABSTOP,5,5,265,170
+    DEFPUSHBUTTON   "적용 후 닫기",IDOK,110,180,50,14
+    PUSHBUTTON      "적용(&A)",IDC_BTNAPPLY,165,180,50,14
+    PUSHBUTTON      "닫기",IDCANCEL,221,180,50,14
+END
+
+IDD_PARA2 DIALOG  0, 0, 262, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "문단을 여러 개로 분할합니다. 문자수를 기준으로 할 때는 선택된 글꼴에 따라 분할 결과가 달라집니다.",IDC_STATIC,10,5,235,30
+    GROUPBOX        "분할 방법",IDC_STATIC,10,45,240,60
+    CONTROL         "마침표를 기준으로 분할(&D)",IDC_P2_RA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,60,105,10
+    CONTROL         "지정한 문자수를 기준으로 분할(&H)",IDC_P2_RA2,"Button",BS_AUTORADIOBUTTON,20,70,125,10
+    CONTROL         "지정한 화면폭에 맞게 분할(&P)",IDC_P2_RA3,"Button",BS_AUTORADIOBUTTON,20,80,109,10
+    CONTROL         "현재 화면에 보이는대로 분할(&W)",IDC_P2_RA4,"Button",BS_AUTORADIOBUTTON,20,90,120,10
+    EDITTEXT        IDC_P2_ED1,155,75,25,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "Spin2",IDC_P2_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,179,75,9,14
+    LTEXT           "문자",IDC_P2_ST1,199,80,41,8,NOT WS_GROUP
+    CONTROL         "분할하면서 들여쓰기(음수면 내어쓰기)(&I)",IDC_P2_CHK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,140,10
+    EDITTEXT        IDC_P2_ED2,155,115,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_P2_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,181,115,9,14
+    LTEXT           "개의 공백폭만큼",IDC_STATIC,195,120,60,8
+    CONTROL         "분할 후 문단 처음에 공백이 있더라도 제거하지 않음(&N)",IDC_P2_CHK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,135,195,10
+END
+
+IDD_PARA3 DIALOG  0, 0, 262, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "문단의 앞뒤에 공백을 삽입하여 수평으로 정렬합니다. 기준폭보다 더 긴 문단은 처리되지 않습니다.",IDC_STATIC,5,0,235,25
+    GROUPBOX        "정렬 방식",IDC_STATIC,5,40,90,60
+    CONTROL         "왼쪽으로 정렬(L)",IDC_P3_RA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,55,69,10
+    CONTROL         "가운데로 정렬(&C)",IDC_P3_RA2,"Button",BS_AUTORADIOBUTTON,15,65,70,10
+    CONTROL         "오른쪽으로 정렬(&R)",IDC_P3_RA3,"Button",BS_AUTORADIOBUTTON,15,75,77,10
+    GROUPBOX        "기준폭",IDC_STATIC,100,40,145,60
+    CONTROL         "문자수(&H)",IDC_P3_RA4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,110,60,47,10
+    CONTROL         "화면폭(&P)",IDC_P3_RA5,"Button",BS_AUTORADIOBUTTON,110,76,47,10
+    EDITTEXT        IDC_P3_ED1,165,70,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_P3_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,195,70,9,14
+    LTEXT           "문자",IDC_P3_ST1,210,76,25,8,NOT WS_GROUP
+END
+
+IDD_PARA5 DIALOG  0, 0, 262, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "문단 사이의 빈 줄 개수를 조정합니다. 각 문단 사이에 빈 줄을 넣거나 이미 삽입되어 있는 빈 줄을 증감시킬 수 있습니다.",IDC_STATIC,10,5,235,25
+    GROUPBOX        "방식",IDC_STATIC,10,45,240,60
+    CONTROL         "최소-지정한 수보다 작으면 빈줄을 삽입(&N)",IDC_P5_RA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,61,149,10
+    CONTROL         "고정-무조건 지정한 수만큼의 빈줄을 유지(&F)",IDC_P5_RA2,"Button",BS_AUTORADIOBUTTON,20,77,155,10
+    CONTROL         "최대-지정한 수를 초과한 빈 줄을 삭제(&M)",IDC_P5_RA3,"Button",BS_AUTORADIOBUTTON,20,91,146,10
+    RTEXT           "빈 줄수(&E)",IDC_STATIC,13,131,42,8
+    EDITTEXT        IDC_P5_ED1,60,125,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_P5_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,100,125,9,14
+END
+
+IDD_SHARENOTICE DIALOG  0, 0, 219, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "셰어웨어 알림"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,115,55,50,14,WS_DISABLED
+    LTEXT           "당근 텍스트 편집기의 1년간 평가 기간이 종료되었습니다.\r\n평가 기간 후에는 실행 직후에 항상 이 대화상자가 표시되며 확인 버튼을 눌러야 실행을 계속할 수 있습니다.\r\n정품 등록에 대해서는 도움말/프로그램 소개를 참조하십시오.",IDC_STATIC,5,10,205,40
+    PUSHBUTTON      "확인",IDOK,50,55,50,14,WS_DISABLED
+END
+
+IDD_ASSOCIATE DIALOG  0, 0, 334, 205
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "연결"
+FONT 9, "굴림"
+BEGIN
+    COMBOBOX        IDC_EXTENSIONS,50,40,75,280,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "연결할 확장자",IDC_STATIC,50,30,44,8
+    EDITTEXT        IDC_EXTDESC,50,70,75,14,ES_AUTOHSCROLL
+    RTEXT           "확장자 설명",IDC_STATIC,50,60,38,8
+    LISTBOX         IDC_ASSOEXTENSION,205,40,55,95,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "연결된 확장자",IDC_STATIC,205,30,44,8
+    PUSHBUTTON      "연결 추가",IDC_MAKEASSOCIATE,140,50,50,14
+    PUSHBUTTON      "연결 제거",IDC_UNASSOCIATE,140,70,50,14
+    LTEXT           "연결 변경은 즉시 적용되며 연결 제거시 원래 연결 상태를 복구합니다.\r\n당근이 설치해제될 때 모든 연결은 당근과 연결되기 전의 프로그램으로 재연결됩니다.\r\ndgp와 dgc는 당근의 고유 파일이므로 연결 관계를 끊지 마십시오.",IDC_STATIC,20,155,290,25
+END
+
+IDD_PARA4 DIALOG  0, 0, 262, 151
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "문단을 크기순으로 정렬합니다.",IDC_STATIC,10,5,235,25
+    GROUPBOX        "정렬 방식",IDC_STATIC,10,45,90,60
+    CONTROL         "오름차순(&A)",IDC_P4_RA1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,60,54,10
+    CONTROL         "내림차순(&D)",IDC_P4_RA2,"Button",BS_AUTORADIOBUTTON,20,80,54,10
+    GROUPBOX        "기준폭",IDC_STATIC,105,45,145,60
+    CONTROL         "대소문자 구분",IDC_P4_CHK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,60,59,10
+    CONTROL         "완전히 동일한 행 제거",IDC_P4_CHK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,80,85,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FILEFIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_GOTOLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_FILEREPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_SYNTAX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_UNINSTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_FTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_FTPCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_HTTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_NEWPROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_PRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_PRINTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_DOWNLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_EDITRECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_READMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_OPERATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_MACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_EDITMACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ADDCOMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_SHORTCUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_SHORTCUTLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_CLIPFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_RUNMACRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_EDITCLIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_SHAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_CONFIRMSAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_CONFIRMRELOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_SPECIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_TOOLBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_PARA1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_PARA2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PARA3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PARA5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_SHARENOTICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_ASSOCIATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_PARA4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "res/ToolBar.bmp"
+IDB_FILES               BITMAP                  "res/Files.bmp"
+IDB_TABS                BITMAP                  "res/Tabs.bmp"
+IDB_TOOLBARBIG          BITMAP                  "res/ToolBarBig.bmp"
+IDB_FTP                 BITMAP                  "res/FtpFiles.bmp"
+IDB_SEL1                BITMAP                  "res/sel1.bmp"
+IDB_SEL2                BITMAP                  "res/sel2.bmp"
+IDB_SEL3                BITMAP                  "res/sel3.bmp"
+IDB_CURLINE1            BITMAP                  "res/curline1.bmp"
+IDB_CURLINE2            BITMAP                  "res/curline2.bmp"
+IDB_CURLINE3            BITMAP                  "res/curline3.bmp"
+IDB_CURLINE4            BITMAP                  "res/curline4.bmp"
+IDB_CURLINE5            BITMAP                  "res/curline5.bmp"
+IDB_CURLINE6            BITMAP                  "res/curline6.bmp"
+IDB_SAMPLE1             BITMAP                  "res\\국화.bmp"
+IDB_SAMPLE2             BITMAP                  "res\\콩.bmp"
+IDB_SAMPLE3             BITMAP                  "res\\아가.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DLL
+//
+
+IDR_DLL1                DLL                     "res\\DgCmd.dll"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

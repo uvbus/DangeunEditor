@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Dangeun - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release6/Dangeun.res" /d "NDEBUG" "C:\1KSHDATA\Api실전\Dangeun29=1.2정식\Dangeun.rc"" 
+Creating temporary file "C:\DOCUME~1\mituri\LOCALS~1\Temp\RSP11.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release6/Dangeun.pch" /Yu"stdafx.h" /Fo"Release6/" /Fd"Release6/" /FD /c 
+"C:\1KSHDATA\Api실전\Dangeun29=1.2정식\ApiEditText.cpp"
+"C:\1KSHDATA\Api실전\Dangeun29=1.2정식\Dangeun.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mituri\LOCALS~1\Temp\RSP11.tmp" 
+Creating temporary file "C:\DOCUME~1\mituri\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib imm32.lib comctl32.lib shlwapi.lib wininet.lib /nologo /subsystem:windows /incremental:no /pdb:"Release6/Dangeun.pdb" /machine:I386 /out:"Release6/Dangeun.exe" 
+".\Release6\AeUtil.obj"
+".\Release6\ApiEdit.obj"
+".\Release6\ApiEditHexa.obj"
+".\Release6\ApiEditText.obj"
+".\Release6\Clip.obj"
+".\Release6\Config.obj"
+".\Release6\Dangeun.obj"
+".\Release6\FileWnd.obj"
+".\Release6\Find.obj"
+".\Release6\Internet.obj"
+".\Release6\Macro.obj"
+".\Release6\Mru.obj"
+".\Release6\Option.obj"
+".\Release6\Parse.obj"
+".\Release6\Print.obj"
+".\Release6\Project.obj"
+".\Release6\ShortCut.obj"
+".\Release6\stdafx.obj"
+".\Release6\ToolBar.obj"
+".\Release6\Util.obj"
+".\Release6\Dangeun.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\mituri\LOCALS~1\Temp\RSP12.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ApiEditText.cpp
+Dangeun.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Dangeun.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
